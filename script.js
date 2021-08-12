@@ -1,8 +1,11 @@
 // Declaring variables
-const questionToggle = document.querySelector(".question");
+const questions = document.querySelectorAll(".question");
 
 const toggleQuestion = () => {
   console.log("kysymystä painettu.");
 };
 
-questionToggle.addEventListener("click", toggleQuestion);
+for (let i = 0; i < questions.length; i++) {
+  const question = questions[i];
+  question.addEventListener("click", toggleQuestion);
+}
