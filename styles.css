@@ -33,6 +33,23 @@ body {
   border-radius: 20px;
 }
 
+/* Columns */
+.column {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.column-left {
+  display: flex;
+  align-content: flex-start;
+}
+
+.column-right {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  flex-grow: 2;
+}
+
 .card h1 {
   font-weight: 700;
 }
@@ -40,6 +57,10 @@ body {
 .q-and-a {
   font-size: 12px;
   border-bottom: 0.5px solid hsl(240, 5%, 91%);
+}
+
+.answer {
+  display: none;
 }
 
 .attribution {
