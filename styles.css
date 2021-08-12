@@ -20,3 +20,21 @@ body {
 *:after {
   box-sizing: border-box;
 }
+
+/* Card */
+.card {
+  margin: 0;
+  display: flex;
+  max-width: 1000px;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
