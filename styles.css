@@ -68,8 +68,16 @@ body {
   outline: inherit;
 }
 
+.question-active {
+  font-weight: 700;
+}
+
 .answer {
   display: none;
+}
+
+.answer-active {
+  display: block;
 }
 
 .attribution {
