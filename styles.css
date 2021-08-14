@@ -88,7 +88,12 @@ body {
 
 /* SVG Images */
 .img-box {
-  display: none;
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  bottom: 50px;
+  /* transform: translateY(-50%); */
+  z-index: 2;
 }
 
 .img-desktop {
@@ -96,6 +101,7 @@ body {
   top: 50%;
   transform: translateY(-35%);
   right: 50px;
+  z-index: 1;
 }
 
 .img-shadow {
