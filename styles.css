@@ -87,15 +87,21 @@ body {
 }
 
 /* SVG Images */
-.img-box,
-.img-desktop {
+.img-box {
   display: none;
+}
+
+.img-desktop {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-35%);
+  right: 50px;
 }
 
 .img-shadow {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-52.5%);
   right: 50px;
 }
 
