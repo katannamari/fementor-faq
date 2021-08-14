@@ -28,26 +28,32 @@ body {
   margin: 0;
   display: flex;
   max-width: 1000px;
-  align-items: center;
+  width: 100%;
+  /* align-items: center; */
   background: white;
   border-radius: 20px;
+  min-height: 600px;
 }
 
 /* Columns */
 .column {
+  width: 50%;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 .column-left {
-  display: flex;
-  align-content: flex-start;
+  /* display: flex;
+  align-content: flex-start; */
+  position: relative;
+  overflow: hidden;
 }
 
 .column-right {
   padding-left: 2rem;
   padding-right: 2rem;
-  flex-grow: 2;
+  /* flex-grow: 2; */
+  align-self: center;
 }
 
 .card h1 {
@@ -78,6 +84,19 @@ body {
 
 .answer-active {
   display: block;
+}
+
+/* SVG Images */
+.img-box,
+.img-desktop {
+  display: none;
+}
+
+.img-shadow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 50px;
 }
 
 .attribution {
