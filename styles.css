@@ -121,7 +121,8 @@ body {
   font-size: 11px;
   text-align: center;
   margin-top: 2rem;
+  color: hsla(0, 0%, 100%, 0.75);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #9ea8d1;
 }
