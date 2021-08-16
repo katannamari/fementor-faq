@@ -201,6 +201,10 @@ body {
     padding-bottom: 2rem;
   }
 
+  .question {
+    text-align: left;
+  }
+
   /* Hide larger images and display smaller ones */
   .img-shadow-desktop,
   .img-woman-desktop,
@@ -222,7 +226,4 @@ body {
     top: -250px;
     margin: 0 auto;
   }
-}
-/* Mobile vertical */
-@media screen and (max-width: 480px) {
 }
