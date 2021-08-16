@@ -171,6 +171,32 @@ body {
     margin-top: 2rem;
     min-height: 300px;
   }
+
+  /* Hide larger images and display smaller ones */
+  .img-shadow-desktop,
+  .img-woman-desktop,
+  .img-box {
+    display: none;
+  }
+
+  .img-shadow-mobile,
+  .img-woman-mobile {
+    display: block;
+  }
+
+  .img-woman-mobile {
+    top: 50px;
+    left: -70px;
+  }
+
+  .img-shadow-mobile {
+    top: -40px;
+    left: -40px;
+  }
+
+  .column-left {
+    overflow: visible;
+  }
 }
 
 /* Mobile horizontal */
@@ -205,18 +231,6 @@ body {
     text-align: left;
   }
 
-  /* Hide larger images and display smaller ones */
-  .img-shadow-desktop,
-  .img-woman-desktop,
-  .img-box {
-    display: none;
-  }
-
-  .img-shadow-mobile,
-  .img-woman-mobile {
-    display: block;
-  }
-
   .img-woman-mobile {
     top: -155px;
     left: -15px;
@@ -224,6 +238,7 @@ body {
   }
   .img-shadow-mobile {
     top: -250px;
+    left: 0;
     margin: 0 auto;
   }
 }
