@@ -170,13 +170,17 @@ body {
 
 /* Media queries */
 
+/* Mobile horizontal */
+@media screen and (max-width: 600px) {
+}
+
 /* Mobile vertical */
 @media screen and (max-width: 480px) {
   .card {
     flex-direction: column;
     align-items: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    /* margin-top: 5rem;
+    margin-bottom: 5rem; */
   }
 
   .card h1 {
@@ -190,11 +194,6 @@ body {
   .column-left {
     overflow: visible;
   }
-
-  /* .column-right {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  } */
 
   /* Hide larger images and display smaller ones */
   .img-shadow-desktop,
