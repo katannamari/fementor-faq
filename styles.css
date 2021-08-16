@@ -73,9 +73,6 @@ body {
 }
 
 .question {
-  /* background: url(images/icon-arrow-down.svg);
-  background-repeat: no-repeat;
-  background-position: right; */
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -113,6 +110,13 @@ body {
 }
 
 /* SVG Images */
+.img-arrow {
+  position: absolute;
+  right: 50px;
+  cursor: pointer;
+}
+
+/* Images for larger devices */
 .img-box {
   position: absolute;
   /* top: 45%; */
@@ -122,7 +126,7 @@ body {
   z-index: 2;
 }
 
-.img-desktop {
+.img-woman-desktop {
   position: absolute;
   /* top: 50%;
   transform: translateY(-50%); */
@@ -131,7 +135,7 @@ body {
   z-index: 1;
 }
 
-.img-shadow {
+.img-shadow-desktop {
   position: absolute;
   /* top: 50%;
   transform: translateY(-50%); */
@@ -139,10 +143,13 @@ body {
   right: 30px;
 }
 
-.img-arrow {
-  position: absolute;
-  right: 50px;
-  cursor: pointer;
+/* Images for small devices */
+.img-woman-mobile {
+  display: none;
+}
+
+.img-shadow-mobile {
+  display: none;
 }
 
 .attribution {
@@ -153,4 +160,34 @@ body {
 }
 .attribution a {
   color: #9ea8d1;
+}
+
+/* Media queries */
+
+/* Mobile vertical */
+@media screen and (max-width: 480px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card h1 {
+    text-align: center;
+  }
+
+  .column-right {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  /* Hide larger images and display smaller ones */
+  .img-shadow-desktop,
+  .img-woman-desktop,
+  .img-box {
+    display: none;
+  }
+
+  .img-shadow-mobile,
+  .img-woman-mobile {
+    display: block;
+  }
 }
