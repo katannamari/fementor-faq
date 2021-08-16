@@ -169,7 +169,7 @@ body {
 @media screen and (max-width: 992px) {
   .card {
     margin-top: 2rem;
-    min-height: 350px;
+    min-height: 300px;
   }
 }
 
