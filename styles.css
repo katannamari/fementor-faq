@@ -165,8 +165,8 @@ body {
 
 /* Media queries */
 
-/* Mobile horizontal */
-@media screen and (max-width: 600px) {
+/* Tablet vertical */
+@media screen and (max-width: 768px) {
   .card {
     flex-direction: column;
     align-items: center;
