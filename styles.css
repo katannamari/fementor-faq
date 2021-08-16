@@ -165,8 +165,16 @@ body {
 
 /* Media queries */
 
-/* Tablet vertical */
-@media screen and (max-width: 768px) {
+/* Tablet Horizontal */
+@media screen and (max-width: 992px) {
+  .card {
+    margin-top: 2rem;
+    min-height: 350px;
+  }
+}
+
+/* Mobile horizontal */
+@media screen and (max-width: 600px) {
   .card {
     flex-direction: column;
     align-items: center;
